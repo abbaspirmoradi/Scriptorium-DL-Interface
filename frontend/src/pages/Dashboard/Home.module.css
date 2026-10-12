@@ -1,0 +1,5 @@
+.element_container{
+    overflow: auto;
+    height: 100vh;
+    background-color: #f4f3ef; /* parchment */
+}

@@ -1,0 +1,63 @@
+.user_profile{
+    width: 2rem;
+    height: 2rem;
+}
+
+.header_container{
+    min-height: 62px;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    background-color: #1a1744; /* navy — archival design system */
+    transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.ril_bg{
+    background: #14123a;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brandIcon{
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: transparent;
+}
+
+.brandTitle{
+    color: #fff;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.workspaceBadge{
+    color: rgba(255,255,255,0.85);
+    background: transparent;
+    padding-right: 12px;
+    font-family: "DM Mono", ui-monospace, monospace;
+    font-size: 13px;
+    margin-right: 12px;
+}
+
+.avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #c9930a; /* amber accent */
+    color: #1a1744;
+    font-weight: 600;
+    font-family: "Inter", system-ui, sans-serif;
+}

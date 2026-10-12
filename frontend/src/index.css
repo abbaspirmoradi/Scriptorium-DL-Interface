@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Archival design system fonts — EB Garamond for document titles (scholarly
+   register), Inter for UI chrome, DM Mono for metadata/timestamps/filters.
+   Replaces the old Poppins-everywhere approach. */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #f4f3ef; /* parchment */
+  color: #1c1917; /* ink */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+.layoutWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 2rem;
+}
+
+.mainPanel {
+  min-width: 0;
+  flex: 1;
+}
+
+.primary_bg{
+  background-color: #1a1744; /* navy */
+}
+
+.main_element_container{
+  padding: 3rem 5rem;
+  overflow: auto;
+  height: 100vh;
+  padding-bottom: 8rem;
+  background-color: #f4f3ef; /* parchment */
+}
+.mt_22{
+  margin-top: 62px;
+}
+.nav_wrap{
+  background-color: #ffffff; /* parchment-card */
+  border-bottom: 1px solid rgba(28, 25, 23, 0.1);
+}
+.default_color{
+  color: #c2bcac;
+}
+.doc_default_color{
+  color: #c9930a; /* amber accent */
+}
+.query_icon_color{
+  color: #1a1744; /* navy */
+}
+.block_element{
+  width: 3.5px;
+  height: 3.5px;
+  background-color: #828288;
+}
+.pagination_element a{
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

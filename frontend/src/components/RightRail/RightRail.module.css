@@ -1,0 +1,177 @@
+.rail {
+  flex-shrink: 0;
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.railToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px 0 12px;
+  flex-shrink: 0;
+}
+
+/* Workspace Details variant only — keeps the toolbar row from growing taller
+   than its content needs. */
+.railToolbarCompact {
+  max-height: 44px;
+}
+
+.modeSwitch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #ede9df; /* parchment-secondary */
+  border: 1px solid rgba(28, 25, 23, 0.1);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.modeBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  color: #6b6358;
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.12s ease-out, color 0.12s ease-out;
+}
+
+.modeBtn:hover {
+  color: #1c1917;
+}
+
+.modeBtnActive {
+  background: #ffffff;
+  color: #1a1744; /* navy */
+  box-shadow: 0 1px 2px rgba(28, 25, 23, 0.1);
+}
+
+.collapseBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(28, 25, 23, 0.12);
+  background: #ffffff;
+  border-radius: 6px;
+  color: #6b6358;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.12s ease-out, border-color 0.12s ease-out;
+}
+
+.collapseBtn:hover {
+  color: #1a1744;
+  border-color: #1a1744;
+}
+
+.railBody {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px 12px 12px;
+}
+
+.paneHistory,
+.paneChat {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.paneHistory > *,
+.paneChat > * {
+  height: 100%;
+}
+
+.paneFull {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.paneFull > * {
+  height: 100%;
+}
+
+.divider {
+  flex-shrink: 0;
+  height: 9px;
+  margin: 3px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: row-resize;
+  border-radius: 4px;
+  transition: background-color 0.12s ease-out;
+}
+
+.divider:hover,
+.dividerActive {
+  background: rgba(201, 147, 10, 0.15); /* amber accent, subtle */
+}
+
+.dividerGrip {
+  width: 32px;
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(28, 25, 23, 0.18);
+}
+
+.dividerActive .dividerGrip {
+  background: #c9930a; /* amber accent */
+}
+
+/* Collapsed state: thin icon strip */
+.collapsedRail {
+  flex-shrink: 0;
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-left: 1px solid rgba(28, 25, 23, 0.1);
+}
+
+.collapsedIconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(28, 25, 23, 0.12);
+  background: #ffffff;
+  border-radius: 8px;
+  color: #6b6358;
+  cursor: pointer;
+  transition: color 0.12s ease-out, border-color 0.12s ease-out;
+}
+
+.collapsedIconBtn:hover {
+  color: #1a1744;
+  border-color: #1a1744;
+}
+
+.collapsedExpandBtn {
+  margin-top: auto;
+  margin-bottom: 12px;
+}

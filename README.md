@@ -43,8 +43,5 @@ A research project that supports development of a AI-augmented collaborative sea
 - Abbas Pirmoradi Bezanjani
 
 ## Credits
-- Puter AI
-  - https://developer.puter.com/tutorials/free-unlimited-openai-api/
-
 - Material UI
   - https://mui.com/material-ui/material-icons/
